@@ -1,0 +1,23 @@
+{
+  "name": "aide",
+  "version": "1.0.0",
+  "description": "personal aide",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnny-KK/aide.git"
+  },
+  "keywords": [],
+  "author": "tian.jingwei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Johnny-KK/aide/issues"
+  },
+  "homepage": "https://github.com/Johnny-KK/aide#readme"
+}
