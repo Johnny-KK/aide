@@ -16,6 +16,11 @@
   "keywords": [],
   "author": "tian.jingwei",
   "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
   "bugs": {
     "url": "https://github.com/Johnny-KK/aide/issues"
   },
