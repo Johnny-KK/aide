@@ -2,44 +2,40 @@
   "name": "aide",
   "version": "1.0.0",
   "description": "personal aide",
+  "author": "tian.jingwei",
+  "license": "MIT",
+  "homepage": "https://github.com/Johnny-KK/aide#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnny-KK/aide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Johnny-KK/aide/issues"
+  },
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "commit": "git-cz",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx"
+    "clean": "rm -rf ./node_modules ./pnpm-lock.yaml ./**/**/node_modules",
+    "lint": "eslint . --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Johnny-KK/aide.git"
-  },
-  "keywords": [],
-  "author": "tian.jingwei",
-  "license": "MIT",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     }
   },
-  "bugs": {
-    "url": "https://github.com/Johnny-KK/aide/issues"
-  },
-  "homepage": "https://github.com/Johnny-KK/aide#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "@typescript-eslint/parser": "^5.52.0",
+    "@antfu/eslint-config": "^0.35.3",
     "@vitest/coverage-c8": "^0.28.5",
     "commitizen": "^4.3.0",
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
-    "prettier": "^2.8.4",
     "typescript": "^4.9.5",
     "vite": "^4.1.1",
     "vitest": "^0.28.5"
